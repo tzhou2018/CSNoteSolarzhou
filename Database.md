@@ -1,4 +1,17 @@
 # Database
+* 数据库
+    * [笔试题](*笔试题)
+    * [Mysql数据库引擎](*Mysql数据库引擎)
+    * [并发控制机制](*并发控制机制)
+    * [事务(ACID)](*事务(ACID))
+    * [隔离级别](*隔离级别)
+    * [常见的封锁类型？](*常见的封锁类型？)
+    * [数据库优化](*数据库优化)
+    * [三大范式](*三大范式)
+    * [索引](*索引)
+    * [视图和表](*视图和表)
+    * [参考文章](*参考文章)
+
 ## 笔试题
 [SQL面试题案例数据创建以及答案](https://zhuanlan.zhihu.com/p/50109656)
 [行转列-列转行操作](https://www.cnblogs.com/xiaoxi/p/7151433.html)
@@ -52,7 +65,6 @@
 一旦事务提交，则其所做的修改将会永远保存到数据库中。即使系统发生崩溃，事务执行的结果也不能丢失。
 
 系统发生奔溃可以用重做日志（Redo Log）进行恢复，从而实现持久性。与回滚日志记录数据的逻辑修改不同，重做日志记录的是数据页的物理修改。
-![](_v_images/20200413201256933_15072.png =676x)
 
 ### 会出现哪些并发一致性问题？
 - **丢失修改**：一个事务对数据进行了修改，在事务提交之前，另一个事务对同一个数据进行了修改，覆盖了之前的修改；
@@ -281,3 +293,5 @@ InnoDB 存储引擎中使用的就是悲观锁
 [Mysql--B+树索引---公众号](https://mp.weixin.qq.com/s?__biz=Mzg2NzA4MTkxNQ==&mid=2247487296&idx=1&sn=98f6fd5042117e73e4cfe57741a28372&chksm=ce404494f937cd820e254a7248d8777891c7de35e9472fb4b9f27730523a6bfb5fecd7261b62&scene=126&sessionid=1586671333&key=477a62bdccbfff3361c887655e5ba1884e2cfc07a6d80ef08567345cf9284e1e7035070bc904bd292d1639163c2add7be788d8eaa05ed829f71f3a9ef756e8409b8944a502e66c1b90bfa4afd2d19357&ascene=1&uin=NzY1NTk2OTYy&devicetype=Windows+10&version=62080079&lang=zh_CN&exportkey=AQCbnQKrniaQQHbo600Brmw%3D&pass_ticket=0N7nD63AqWB6KC4njARwsVlWuJ4NRZBuCQAPJ%2B6Utxq1VfsyL6LFXyZyyNm8jIS2)
 [视图和表的区别](https://www.cnblogs.com/binyao/p/4899970.html)
 [一条Sql语句为什么执行的很慢？](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247485185&idx=1&sn=66ef08b4ab6af5757792223a83fc0d45&chksm=cea248caf9d5c1dc72ec8a281ec16aa3ec3e8066dbb252e27362438a26c33fbe842b0e0adf47&token=79317275&lang=zh_CN#rd)
+[Waking-Up](https://github.com/wolverinn/Waking-Up)
+[CS-Notes](https://github.com/tzhou2018/CS-Notes)
