@@ -16,8 +16,8 @@
 [SQL面试题案例数据创建以及答案](https://zhuanlan.zhihu.com/p/50109656)
 [行转列-列转行操作](https://www.cnblogs.com/xiaoxi/p/7151433.html)
 
-一条SQL遇见执行顺序
-![](_v_images/20200601195137211_9124.png)
+一条SQL了解执行顺序
+![](_v_images/20200601195137211_9124.png = 670x)
 ## Mysql数据库引擎
 - InnoDB 和 MyISAM，
 1. InnoDB 支持事务，MyISAM 不支持事务。这是 MySQL 将默认存储引擎从 MyISAM 变成 InnoDB 的重要原因之一；
