@@ -7,6 +7,7 @@
     * [参考文章](#参考文章)
 ## 常见排序的时间复杂度
 ![](_v_images/20200925210756931_32728.png)
+
 1. 快排空间复杂度 O(logn) 
     排序时需要选择断点，最坏情况下为 `O(N) `;大样本下期望为`O(logn)`;
 
@@ -32,12 +33,16 @@
 ## 刷题
 先刷`剑指offer`，再刷`LeetCode`。剑指offer 熟练到随便拎出来一道题有很大的把我能够手写出来就行，`LeetCode`可以按分类刷，一般200到左右就行。
 以下是我刷题的过程中做的一些整理，其中掺杂了个人的理解。仅供参考。
+
 - [剑指offer](https://github.com/tzhou2018/swordToOffer)
+
     题目顺序基本上与牛客保持一致，在`/other`目录下增加了牛客上缺少的题目。
 
 - [LeetCode](https://github.com/tzhou2018/LeetCode)
+
     Leetcode上一千多道题目，参考前辈们整理的文档，精选了大概200左右的题目， 同时按类别进行了整理。
 
 ## 参考文章
 [堆，栈说明](https://www.cnblogs.com/kevinGaoblog/archive/2012/03/23/2413102.html)
+
 [数组为什么比链表快？](https://blog.csdn.net/islandww/article/details/72511737)

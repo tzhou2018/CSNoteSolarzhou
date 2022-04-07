@@ -13,6 +13,7 @@
 ## tcp建立连接与断开
 
 - 三次握手
+
 ![](_v_images/20200205203324230_17118.png)
 
 SYN(Synchronize)：表示同步序列编号(Synchronize Sequence Numbers)是否有效。该标志仅在三次握手建立TCP连接时有效.
@@ -32,6 +33,7 @@ FIN(Finish)：带有该标志置位的数据包用来结束一个TCP会话，但
     如果是第一种情况，`ACK`丢失会触发服务端`SYN/ACK`重传。（但是为了防止`SYN flood`攻击，有些网站关闭了`SYN/ACK`重传，比如百度）
 
 - 四次挥手
+
 ![](_v_images/20200205203245841_30440.png)
 
 为什么四次挥手？
@@ -44,7 +46,7 @@ FIN(Finish)：带有该标志置位的数据包用来结束一个TCP会话，但
 
 ## 拥塞控制
 
-![](_v_images/20200225183758300_28427.png =801x)
+![](_v_images/20200225183758300_28427.png)
 
 拥塞控制主要由四个算法组成：**慢启动（Slow Start）、拥塞避免（Congestion voidance）、快重传 （Fast Retransmit）、快恢复（Fast Recovery）**
 
@@ -67,11 +69,17 @@ FIN(Finish)：带有该标志置位的数据包用来结束一个TCP会话，但
 
 
 第一层：应用层。定义了用于在网络中进行通信和传输数据的接口；
+
 第二层：表示层。定义不同的系统中数据的传输格式，编码和解码规范等；
+
 第三层：会话层。管理用户的会话，控制用户间逻辑连接的建立和中断；
+
 第四层：传输层。管理着网络中的端到端的数据传输；
+
 第五层：网络层。定义网络设备间如何传输数据,控制子网运行，如逻辑编制，地址划分，路由选择等；
+
 第六层：链路层。将上面的网络层的数据包封装成数据帧，便于物理层传输；
+
 第七层：物理层。这一层主要就是传输这些二进制数据。
 ## Session Cookie
 ### Session Cookie区别
@@ -81,6 +89,7 @@ Cookie是客户端保存用户信息的一种机制，用来记录用户的一�
 token也类似一个令牌，无状态，用户信息都被加密到token中，服务器收到token后解密就可知道是哪个用户。需要开发者手动添加
 
 token就是令牌，比如你授权（登录）一个程序时，他就是个依据，判断你是否已经授权该软件；cookie就是写在客户端的一个txt文件，里面包括你登录信息之类的，这样你下次在登录某个网站，就会自动调用cookie自动登录用户名；session和cookie差不多，只是session是写在服务器端的文件，也需要在客户端写入cookie文件，但是文件里是你的浏览器编号.Session的状态是存储在服务器端，客户端只有session id；而Token的状态是存储在客户端。
+
 作者：骑小猪看流星
 链接：https://www.jianshu.com/p/bd1be47a16c1
 ### Session Cookie选择
@@ -134,13 +143,16 @@ TCP粘包就是指发送方发送的若干包数据到达接收方时粘成了�
 
 ## 网际控制报文协议 ICMP
 ICMP 是为了更有效地转发 IP 数据报和提高交付成功的机会。它封装在 IP 数据报中，但是不属于高层协议。
-![](_v_images/20200407101919057_4650.png =591x)
+
+![](_v_images/20200407101919057_4650.png)
 
 ICMP 报文分为差错报告报文和询问报文。
-![](_v_images/20200407101954705_14399.png =659x)
+
+![](_v_images/20200407101954705_14399.png)
 
 ### 1. Ping
 Ping 是 ICMP 的一个重要应用，主要用来测试两台主机之间的连通性。
+
 Ping 的原理是通过向目的主机发送 ICMP Echo 请求报文，目的主机收到之后会发送 Echo 回答报文。Ping 会根据时间和成功响应的次数估算出数据包往返时间以及丢包率。
 
 ### 2. Traceroute
@@ -171,11 +183,18 @@ HTTP协议的长连接和短连接，实质上是TCP协议的长连接和短连�
 ## 参考文章
 
 [关于三次握手与四次挥手面试官想考我们什么？-掘金](https://juejin.im/post/5ccd0dfc6fb9a0324a08bb73)
+
 [TCP协议中Seq、Ack的变化规律](http://www.xumenger.com/tcp-seq-ack-20180605/)
+
 [网络七层协议](https://blog.csdn.net/yaopeng_2005/article/details/7064869)
+
 [COOKIE和SESSION有什么区别？--知乎](https://www.zhihu.com/question/19786827/answer/28752144)
+
 [HTTP长连接和短连接](https://www.cnblogs.com/0201zcr/p/4694945.html)
+
 [深入理解HTTPS工作原理--掘金](https://juejin.im/post/5ca6a109e51d4544e27e3048#heading-9)
+
 [Waking-Up](https://github.com/wolverinn/Waking-Up)
+
 [CS-Notes](https://github.com/tzhou2018/CS-Notes)
 
